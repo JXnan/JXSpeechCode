@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>certificates</key>
+	<array>
+		<dict>
+			<key>certificateKind</key>
+			<string>iOSDevelopment</string>
+			<key>memberID</key>
+			<string>JaneDoeMemberID</string>
+			<key>name</key>
+			<string>Jane Doe</string>
+			<key>serialNumber</key>
+			<string>42</string>
+			<key>sha1Hash</key>
+			<string>1</string>
+			<key>teamID</key>
+			<string>FakeTeamID</string>
+			<key>teamName</key>
+			<string>Fake Team</string>
+			<key>inKeychain</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>certificateKind</key>
+			<string>iOSDevelopment</string>
+			<key>memberID</key>
+			<string>JohnDoeMemberID</string>
+			<key>name</key>
+			<string>iPhone Developer: John Doe</string>
+			<key>serialNumber</key>
+			<string>42</string>
+			<key>sha1Hash</key>
+			<string>2</string>
+			<key>teamID</key>
+			<string>FakeTeamID</string>
+			<key>teamName</key>
+			<string>Fake Team</string>
+		</dict>
+	</array>
+	<key>profiles</key>
+	<array>
+		<dict>
+			<key>UUID</key>
+			<string>com.fake.app.plist uuid</string>
+			<key>certificates</key>
+			<array>
+				<string>1</string>
+				<string>2</string>
+			</array>
+			<key>creationDate</key>
+			<date>2015-09-24T00:00:00Z</date>
+			<key>entitlements</key>
+			<dict/>
+			<key>name</key>
+			<string>iOS Team Provisioning Profile: com.fake.app</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>supportedUDIDs</key>
+			<array>
+				<string>Identifier-DeviceA</string>
+			</array>
+			<key>teamID</key>
+			<string>FakeTeamID</string>
+			<key>teamName</key>
+			<string>Fake Team</string>
+		</dict>
+	</array>
+</dict>
+</plist>

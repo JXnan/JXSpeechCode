@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  testWebImage
+//
+//  Created by dfxd on 16/4/11.
+//  Copyright © 2016年 dfxd. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "PrivateClass.h"
+#import "DVTSourceTextView.h"
+#import "JRSwizzle.h"
+#import "JXSpeechCode.h"
+
+#ifdef DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr,"时间:%s 行号:%-4d 文件名:%-10s Log:%s\n", __TIME__,__LINE__,[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String])
+#else
+#define NSLog(FORMAT, ...) nil
+#endif
+
+#endif /* PrefixHeader_pch */

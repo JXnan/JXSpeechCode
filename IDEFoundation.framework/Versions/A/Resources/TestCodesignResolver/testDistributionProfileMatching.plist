@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>certificates</key>
+	<array>
+		<dict>
+			<key>certificateKind</key>
+			<string>iOSDistribution</string>
+			<key>memberID</key>
+			<string>JohnDoeMemberID</string>
+			<key>name</key>
+			<string>iOS Distribution: Foo Inc.</string>
+			<key>serialNumber</key>
+			<string>42</string>
+			<key>sha1Hash</key>
+			<string>1</string>
+			<key>teamID</key>
+			<string>FakeTeamID</string>
+			<key>teamName</key>
+			<string>Fake Team</string>
+		</dict>
+	</array>
+	<key>profiles</key>
+	<array>
+		<dict>
+			<key>UUID</key>
+			<string>com.fake.app.plist [store profile]</string>
+			<key>certificates</key>
+			<array>
+				<string>1</string>
+			</array>
+			<key>creationDate</key>
+			<date>2015-09-24T00:00:00Z</date>
+			<key>entitlements</key>
+			<dict/>
+			<key>name</key>
+			<string>XC: *</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>FakeTeamID</string>
+			<key>teamName</key>
+			<string>Fake Team</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>com.fake.app.plist [enterprise profile]</string>
+			<key>certificates</key>
+			<array>
+				<string>1</string>
+			</array>
+			<key>creationDate</key>
+			<date>2015-09-24T00:00:00Z</date>
+			<key>entitlements</key>
+			<dict/>
+			<key>name</key>
+			<string>XC: *</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>FakeTeamID</string>
+			<key>teamName</key>
+			<string>Fake Team</string>
+			<key>isUniversal</key>
+			<true />
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>com.fake.app.plist [ad hoc profile with two devices]</string>
+			<key>certificates</key>
+			<array>
+				<string>1</string>
+			</array>
+			<key>creationDate</key>
+			<date>2015-09-24T00:00:00Z</date>
+			<key>entitlements</key>
+			<dict/>
+			<key>name</key>
+			<string>XC Ad-Hoc: *</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>supportedUDIDs</key>
+			<array>
+				<string>Identifier-DeviceA</string>
+				<string>Identifier-DeviceB</string>
+			</array>
+			<key>teamID</key>
+			<string>FakeTeamID</string>
+			<key>teamName</key>
+			<string>Fake Team</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>com.fake.app.plist [ad hoc profile with one device]</string>
+			<key>certificates</key>
+			<array>
+				<string>1</string>
+			</array>
+			<key>creationDate</key>
+			<date>2015-09-24T00:00:00Z</date>
+			<key>entitlements</key>
+			<dict/>
+			<key>name</key>
+			<string>XC Ad-Hoc: *</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>supportedUDIDs</key>
+			<array>
+				<string>Identifier-DeviceC</string>
+			</array>
+			<key>teamID</key>
+			<string>FakeTeamID</string>
+			<key>teamName</key>
+			<string>Fake Team</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>certificates</key>
+	<array>
+		<dict>
+			<key>certificateKind</key>
+			<string>iOSDevelopment</string>
+			<key>memberID</key>
+			<string>EFGHI67890</string>
+			<key>name</key>
+			<string>iPhone Developer: Johnny Appleseed</string>
+			<key>serialNumber</key>
+			<string>42</string>
+			<key>sha1Hash</key>
+			<string>1</string>
+			<key>teamID</key>
+			<string>ABCDF12345</string>
+			<key>teamName</key>
+			<string>Test Team: ABCDF12345</string>
+		</dict>
+		<dict>
+			<key>certificateKind</key>
+			<string>MacDevelopment</string>
+			<key>memberID</key>
+			<string>EFGHI67890</string>
+			<key>name</key>
+			<string>Mac Developer: Johnny Appleseed</string>
+			<key>serialNumber</key>
+			<string>43</string>
+			<key>sha1Hash</key>
+			<string>2</string>
+			<key>teamID</key>
+			<string>ABCDF12345</string>
+			<key>teamName</key>
+			<string>Test Team: ABCDF12345</string>
+		</dict>
+	</array>
+	<key>profiles</key>
+	<array/>
+</dict>
+</plist>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>certificates</key>
+	<array>
+		<dict>
+			<key>certificateKind</key>
+			<string>iOSDevelopment</string>
+			<key>isIdentity</key>
+			<false/>
+			<key>memberID</key>
+			<string>EFGHI67890</string>
+			<key>name</key>
+			<string>iPhone Developer: Johnny Appleseed</string>
+			<key>serialNumber</key>
+			<string>42</string>
+			<key>sha1Hash</key>
+			<string>1</string>
+			<key>teamID</key>
+			<string>ABCDF12345</string>
+			<key>teamName</key>
+			<string>Test Team: ABCDF12345</string>
+		</dict>
+		<dict>
+			<key>certificateKind</key>
+			<string>MacDevelopment</string>
+			<key>isIdentity</key>
+			<false/>
+			<key>memberID</key>
+			<string>EFGHI67890</string>
+			<key>name</key>
+			<string>Mac Developer: Johnny Appleseed</string>
+			<key>serialNumber</key>
+			<string>43</string>
+			<key>sha1Hash</key>
+			<string>2</string>
+			<key>teamID</key>
+			<string>ABCDF12345</string>
+			<key>teamName</key>
+			<string>Test Team: ABCDF12345</string>
+		</dict>
+	</array>
+	<key>profiles</key>
+	<array>
+		<dict>
+			<key>UUID</key>
+			<string>com.fake.app.plist (expired cert) uuid</string>
+			<key>certificates</key>
+			<array>
+				<string>1</string>
+			</array>
+			<key>creationDate</key>
+			<date>2014-09-03T00:00:00Z</date>
+			<key>entitlements</key>
+			<dict/>
+			<key>name</key>
+			<string>iOS Team Provisioning Profile: com.fake.app (expired cert)</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>supportedUDIDs</key>
+			<array>
+				<string>Identifier-DeviceA</string>
+			</array>
+			<key>teamID</key>
+			<string>FakeTeamID</string>
+			<key>teamName</key>
+			<string>Fake Team</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>com.fake.app.plist uuid</string>
+			<key>certificates</key>
+			<array>
+				<string>2</string>
+			</array>
+			<key>creationDate</key>
+			<date>2014-09-02T00:00:00Z</date>
+			<key>entitlements</key>
+			<dict/>
+			<key>name</key>
+			<string>iOS Team Provisioning Profile: com.fake.app</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>supportedUDIDs</key>
+			<array>
+				<string>Identifier-DeviceA</string>
+			</array>
+			<key>teamID</key>
+			<string>FakeTeamID</string>
+			<key>teamName</key>
+			<string>Fake Team</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>com.fake.app.plist uuid [with both devices]</string>
+			<key>certificates</key>
+			<array>
+				<string>2</string>
+			</array>
+			<key>entitlements</key>
+			<dict/>
+			<key>name</key>
+			<string>iOS Team Provisioning Profile: com.fake.app</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>supportedUDIDs</key>
+			<array>
+				<string>Identifier-DeviceA</string>
+				<string>Identifier-DeviceB</string>
+			</array>
+			<key>teamID</key>
+			<string>FakeTeamID</string>
+			<key>teamName</key>
+			<string>Fake Team</string>
+		</dict>
+	</array>
+</dict>
+</plist>

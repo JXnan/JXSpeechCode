@@ -1,0 +1,5 @@
+framework module IDEFoundation {
+    umbrella header "IDEFoundationPublic.h"
+    requires objc
+    export *
+}

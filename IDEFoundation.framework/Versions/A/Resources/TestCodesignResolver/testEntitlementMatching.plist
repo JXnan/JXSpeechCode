@@ -1,0 +1,1238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>certificates</key>
+	<array>
+		<dict>
+			<key>certificateKind</key>
+			<string>MacDevelopment</string>
+			<key>memberID</key>
+			<string>MEMBER_ID</string>
+			<key>name</key>
+			<string>Certificate</string>
+			<key>serialNumber</key>
+			<string>1234567890</string>
+			<key>sha1Hash</key>
+			<string>MacDevelopment</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>certificateKind</key>
+			<string>iOSDevelopment</string>
+			<key>memberID</key>
+			<string>MEMBER_ID</string>
+			<key>name</key>
+			<string>Certificate</string>
+			<key>serialNumber</key>
+			<string>1234567890</string>
+			<key>sha1Hash</key>
+			<string>iOSDevelopment</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+	</array>
+	<key>profiles</key>
+	<array>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: No Entitlements</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict/>
+			<key>expirationDate</key>
+			<string>Next Year</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: No Entitlements</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict/>
+			<key>expirationDate</key>
+			<string>Next Year</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.foo.*</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.foo.*</string>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.foo</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.foo</string>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.foo.*</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>com.example.foo.*</string>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.foo</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>com.example.foo</string>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.aps.foo.*</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>aps-environment</key>
+				<string>com.example.aps.foo.*</string>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.aps.foo</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>aps-environment</key>
+				<string>com.example.aps.foo</string>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.aps.foo.*</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.aps-environment</key>
+				<string>com.example.aps.foo.*</string>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.aps.foo</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.aps-environment</key>
+				<string>com.example.aps.foo</string>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.ukvs.foo.*</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.ubiquity-kvstore-identifier</key>
+				<string>com.example.ukvs.foo.*</string>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.ukvs.foo</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.ubiquity-kvstore-identifier</key>
+				<string>com.example.ukvs.foo</string>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.ukvs.foo.*</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.ubiquity-kvstore-identifier</key>
+				<string>com.example.ukvs.foo.*</string>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.ukvs.foo</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.ubiquity-kvstore-identifier</key>
+				<string>com.example.ukvs.foo</string>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.uci.foo.*</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.ubiquity-container-identifiers</key>
+				<array>
+					<string>com.example.uci.foo.*</string>
+				</array>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.uci.foo</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.ubiquity-container-identifiers</key>
+				<array>
+					<string>com.example.uci.foo</string>
+				</array>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.uci.foo.*</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.ubiquity-container-identifiers</key>
+				<array>
+					<string>com.example.uci.foo.*</string>
+				</array>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.uci.foo</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.ubiquity-container-identifiers</key>
+				<array>
+					<string>com.example.uci.foo</string>
+				</array>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.icci.foo.*</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.icloud-container-identifiers</key>
+				<array>
+					<string>com.example.icci.foo.*</string>
+				</array>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.icci.foo</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.icloud-container-identifiers</key>
+				<array>
+					<string>com.example.icci.foo</string>
+				</array>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.icci.foo.*</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.icloud-container-identifiers</key>
+				<array>
+					<string>com.example.icci.foo.*</string>
+				</array>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.icci.foo</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.icloud-container-identifiers</key>
+				<array>
+					<string>com.example.icci.foo</string>
+				</array>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.ics.foo.*</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.icloud-services</key>
+				<array>
+					<string>com.example.ics.foo.*</string>
+				</array>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.ics.foo</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.icloud-services</key>
+				<array>
+					<string>com.example.ics.foo</string>
+				</array>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.ics.foo.*</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.icloud-services</key>
+				<array>
+					<string>com.example.ics.foo.*</string>
+				</array>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.ics.foo</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.icloud-services</key>
+				<array>
+					<string>com.example.ics.foo</string>
+				</array>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.icce.foo.*</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.icloud-container-environment</key>
+				<array>
+					<string>com.example.icce.foo.*</string>
+				</array>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.icce.foo</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.icloud-container-environment</key>
+				<array>
+					<string>com.example.icce.foo</string>
+				</array>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.icce.foo.*</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.icloud-container-environment</key>
+				<array>
+					<string>com.example.icce.foo.*</string>
+				</array>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.icce.foo</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.icloud-container-environment</key>
+				<array>
+					<string>com.example.icce.foo</string>
+				</array>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.iccdci.foo.*</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.icloud-container-development-container-identifiers</key>
+				<array>
+					<string>com.example.iccdci.foo.*</string>
+				</array>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.iccdci.foo</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.icloud-container-development-container-identifiers</key>
+				<array>
+					<string>com.example.iccdci.foo</string>
+				</array>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.iccdci.foo.*</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.icloud-container-development-container-identifiers</key>
+				<array>
+					<string>com.example.iccdci.foo.*</string>
+				</array>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.iccdci.foo</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.icloud-container-development-container-identifiers</key>
+				<array>
+					<string>com.example.iccdci.foo</string>
+				</array>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.get-task-allow</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>get-task-allow</key>
+				<true/>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.get-task-allow</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>get-task-allow</key>
+				<true/>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.playable-content</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.playable-content</key>
+				<true/>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.playable-content</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.playable-content</key>
+				<true/>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.nikefuel-source</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.healthkit.nikefuel-source</key>
+				<true/>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.nikefuel-source</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.healthkit.nikefuel-source</key>
+				<true/>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.homekit-background</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.homekit.background-app</key>
+				<true/>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.homekit-background</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.homekit.background-app</key>
+				<true/>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.photo-editing</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.extension-host.photo-editing</key>
+				<true/>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.photo-editing</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>com.apple.developer.extension-host.photo-editing</key>
+				<true/>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: com.example.beta-reports-active</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>beta-reports-active</key>
+				<true/>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: com.example.beta-reports-active</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.bar</string>
+				<key>beta-reports-active</key>
+				<true/>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Month</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: Kitchen sink</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>*</string>
+				<key>aps-environment</key>
+				<string>*</string>
+				<key>beta-reports-active</key>
+				<true/>
+				<key>com.apple.developer.extension-host.photo-editing</key>
+				<true/>
+				<key>com.apple.developer.healthkit.nikefuel-source</key>
+				<true/>
+				<key>com.apple.developer.homekit.background-app</key>
+				<true/>
+				<key>com.apple.developer.icloud-container-development-container-identifiers</key>
+				<array>
+					<string>*</string>
+				</array>
+				<key>com.apple.developer.icloud-container-environment</key>
+				<array>
+					<string>*</string>
+				</array>
+				<key>com.apple.developer.icloud-container-identifiers</key>
+				<array>
+					<string>*</string>
+				</array>
+				<key>com.apple.developer.icloud-services</key>
+				<array>
+					<string>*</string>
+				</array>
+				<key>com.apple.developer.playable-content</key>
+				<true/>
+				<key>com.apple.developer.ubiquity-container-identifiers</key>
+				<array>
+					<string>*</string>
+				</array>
+				<key>com.apple.developer.ubiquity-kvstore-identifier</key>
+				<string>*</string>
+				<key>get-task-allow</key>
+				<true/>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Week</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: Kitchen sink</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>beta-reports-active</key>
+				<true/>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.developer.aps-environment</key>
+				<string>*</string>
+				<key>com.apple.developer.extension-host.photo-editing</key>
+				<true/>
+				<key>com.apple.developer.healthkit.nikefuel-source</key>
+				<true/>
+				<key>com.apple.developer.homekit.background-app</key>
+				<true/>
+				<key>com.apple.developer.icloud-container-development-container-identifiers</key>
+				<array>
+					<string>*</string>
+				</array>
+				<key>com.apple.developer.icloud-container-environment</key>
+				<array>
+					<string>*</string>
+				</array>
+				<key>com.apple.developer.icloud-container-identifiers</key>
+				<array>
+					<string>*</string>
+				</array>
+				<key>com.apple.developer.icloud-services</key>
+				<array>
+					<string>*</string>
+				</array>
+				<key>com.apple.developer.playable-content</key>
+				<true/>
+				<key>com.apple.developer.ubiquity-container-identifiers</key>
+				<array>
+					<string>*</string>
+				</array>
+				<key>com.apple.developer.ubiquity-kvstore-identifier</key>
+				<string>*</string>
+				<key>get-task-allow</key>
+				<true/>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Week</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+	</array>
+</dict>
+</plist>

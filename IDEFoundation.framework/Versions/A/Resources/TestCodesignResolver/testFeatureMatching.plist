@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>certificates</key>
+	<array>
+		<dict>
+			<key>certificateKind</key>
+			<string>MacDevelopment</string>
+			<key>memberID</key>
+			<string>MEMBER_ID</string>
+			<key>name</key>
+			<string>Certificate</string>
+			<key>serialNumber</key>
+			<string>1234567890</string>
+			<key>sha1Hash</key>
+			<string>MacDevelopment</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>certificateKind</key>
+			<string>iOSDevelopment</string>
+			<key>memberID</key>
+			<string>MEMBER_ID</string>
+			<key>name</key>
+			<string>Certificate</string>
+			<key>serialNumber</key>
+			<string>1234567890</string>
+			<key>sha1Hash</key>
+			<string>iOSDevelopment</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+	</array>
+	<key>profiles</key>
+	<array>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: No features</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>*</string>
+			</dict>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: No features</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+			</dict>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: GameCenter, IAP</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>com.example.foo</string>
+			</dict>
+			<key>expirationDate</key>
+			<string>Tomorrow</string>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: IAP</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>com.example.foo</string>
+			</dict>
+			<key>expirationDate</key>
+			<string>Next Week</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: GameCenter</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>com.example.foo</string>
+				<key>com.apple.developer.game-center</key>
+				<true/>
+			</dict>
+			<key>expirationDate</key>
+			<string>Tomorrow</string>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: iCloud</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.developer.icloud-container-identifiers</key>
+				<array>
+					<string>foo</string>
+				</array>
+			</dict>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: iCloud</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.developer.icloud-container-identifiers</key>
+				<array>
+					<string>foo</string>
+				</array>
+			</dict>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: Data Protection</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.developer.default-data-protection</key>
+				<string>NSFileProtectionComplete</string>
+			</dict>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: Data Protection</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.developer.default-data-protection</key>
+				<string>NSFileProtectionComplete</string>
+			</dict>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: Passbook</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.developer.pass-type-identifiers</key>
+				<array/>
+			</dict>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: Passbook</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.developer.pass-type-identifiers</key>
+				<array/>
+			</dict>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: Inter-App Audio</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>inter-app-audio</key>
+				<true/>
+			</dict>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: Inter-App Audio</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>inter-app-audio</key>
+				<true/>
+			</dict>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: HomeKit</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.developer.homekit</key>
+				<true/>
+			</dict>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: HomeKit</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.developer.homekit</key>
+				<true/>
+			</dict>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: Maps</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.developer.maps</key>
+				<true/>
+			</dict>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: Maps</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.developer.maps</key>
+				<true/>
+			</dict>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: Keychain Access Groups</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>keychain-access-groups</key>
+				<array/>
+			</dict>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: Keychain Access Groups</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>keychain-access-groups</key>
+				<array/>
+			</dict>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: Application Groups</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.security.application-groups</key>
+				<array>
+					<string>foo</string>
+				</array>
+			</dict>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: Application Groups</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.security.application-groups</key>
+				<array>
+					<string>foo</string>
+				</array>
+			</dict>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: VPN Lite</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.developer.networking.vpn.api</key>
+				<true/>
+			</dict>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: VPN Lite</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.developer.networking.vpn.api</key>
+				<true/>
+			</dict>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: Associated Domains</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.developer.associated-domains</key>
+				<array>
+					<string>example.com</string>
+				</array>
+			</dict>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: Associated Domains</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.developer.associated-domains</key>
+				<array>
+					<string>example.com</string>
+				</array>
+			</dict>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: WAC</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.external-accessory.wireless-configuration</key>
+				<true/>
+			</dict>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: WAC</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.external-accessory.wireless-configuration</key>
+				<true/>
+			</dict>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: OMC</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.developer.in-app-payments</key>
+				<array>
+					<string>foo</string>
+				</array>
+			</dict>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: OMC</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.developer.in-app-payments</key>
+				<array>
+					<string>foo</string>
+				</array>
+			</dict>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: HealthKit</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.developer.healthkit</key>
+				<true/>
+			</dict>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: HealthKit</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.developer.healthkit</key>
+				<true/>
+			</dict>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>iOS: Push</string>
+			<key>certificates</key>
+			<array>
+				<string>iOSDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>aps-environment</key>
+				<string>development</string>
+			</dict>
+			<key>platform</key>
+			<string>ios</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>Mac: Push</string>
+			<key>certificates</key>
+			<array>
+				<string>MacDevelopment</string>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>com.apple.application-identifier</key>
+				<string>*</string>
+				<key>com.apple.developer.aps-environment</key>
+				<string>development</string>
+			</dict>
+			<key>platform</key>
+			<string>osx</string>
+			<key>teamID</key>
+			<string>ABCDEFG123</string>
+			<key>teamName</key>
+			<string>Team Name</string>
+		</dict>
+	</array>
+</dict>
+</plist>
