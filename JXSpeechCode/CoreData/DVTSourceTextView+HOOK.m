@@ -25,10 +25,10 @@
 //获得输入文本的位置
 - (BOOL)jx_selectFirstPlaceholderInCharacterRange:(struct _NSRange)arg1{
     
-    
     NSString * str = [self.textStorage.string substringWithRange:arg1];
-    [[JXSpeechCode sharedPlugin] speechCaptrueString:str];
-    
+    NSString * newStr = [[JXSpeechCode sharedPlugin] serializationString:str];
+
+    [[JXSpeechCode sharedPlugin] speechCaptrueString:newStr];
     return [self jx_selectFirstPlaceholderInCharacterRange:arg1];
 }
 
@@ -44,6 +44,8 @@
         return;
     }
     NSString * captrueText = [self.textStorage.string substringWithRange:arg1];
+    NSLog(@"---%@",captrueText);
+    
     NSRect rect = [self frameForRange:arg1 ignoreWhitespace:NO];
     NSString * serializationText = [[JXSpeechCode sharedPlugin] serializationString:captrueText];
     [[JXSpeechCode sharedPlugin] speechCaptrueString:captrueText];

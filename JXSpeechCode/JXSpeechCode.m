@@ -152,9 +152,12 @@ static NSString * expressionRemove = @"(<#)[^#>]*(#>)";
     
     NSMutableString * newString = [NSMutableString stringWithString:str];
     {//移除文本中的(< ## >)中的内容
-        NSArray * array = [str getTheResultFromTheExpression:expressionRemove];
-        for (NSTextCheckingResult * range in array) {
-            [newString deleteCharactersInRange:range.range];
+        NSMutableArray * array = [str getTheResultFromTheExpression:expressionRemove].mutableCopy;
+
+        while (array.count > 0) {
+            NSTextCheckingResult * result = [array lastObject];
+            [newString deleteCharactersInRange:result.range];
+            [array removeObject:result];
         }
     }
     {//分离单词 并转换小写
