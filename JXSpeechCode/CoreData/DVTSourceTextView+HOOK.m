@@ -44,6 +44,9 @@
         return;
     }
     NSString * captrueText = [self.textStorage.string substringWithRange:arg1];
+    if (!captrueText) {
+        return;
+    }
     NSLog(@"---%@",captrueText);
     
     NSRect rect = [self frameForRange:arg1 ignoreWhitespace:NO];
