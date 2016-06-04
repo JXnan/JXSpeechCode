@@ -47,7 +47,7 @@
     if (!captrueText) {
         return;
     }
-    NSLog(@"---%@",captrueText);
+
     
     NSRect rect = [self frameForRange:arg1 ignoreWhitespace:NO];
     NSString * serializationText = [[JXSpeechCode sharedPlugin] serializationString:captrueText];
@@ -63,7 +63,6 @@
         displayRect.size = textRect.size;
         displayRect.origin.x = rect.origin.x;
         displayRect.origin.y = rect.origin.y - textRect.size.height;
-        NSLog(@"-----%@",NSStringFromRect(displayRect));
         [[JXSpeechCode sharedPlugin] displayTextFieldWithFrame:displayRect superView:self stringValue:results];
         
     }];

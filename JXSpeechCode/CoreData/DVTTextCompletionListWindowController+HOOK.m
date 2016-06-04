@@ -37,21 +37,22 @@
         
         if ([tag isEqualToString:i.name]) {//相同内容,或许需要移动X位置呢
             [[JXSpeechCode sharedPlugin] updataWindowPointX:NSMinX(self.window.frame)];
+            
             return;
         }
         tag = i.name;
         NSString * str = [[JXSpeechCode sharedPlugin]serializationString:i.name];
         [[JXSpeechCode sharedPlugin] speechCaptrueString:str];
         
+        
+        NSRect newRect =  [self rectWithString:@"翻译中..."];
+        [[JXSpeechCode sharedPlugin] displayShowWindowWithFrame:newRect stringValue:@"翻译中..."];
+        
         __weak typeof (self) ss = self;
         [[JXSpeechCode sharedPlugin] translationString:str completion:^(NSString *results) {
-            CGRect rect = [results boundingRectWithSize:NSMakeSize(1000, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[NSFont systemFontOfSize:18]}];
-            rect.size.height += 6;
-            rect.size.width += 8;
-            NSRect newRect;
-            newRect.size = rect.size;
-            newRect.origin = ss.window.frame.origin;
-            newRect.origin.y += ss.window.frame.size.height;
+            
+            NSRect newRect = [ss rectWithString:results];
+            
             [[JXSpeechCode sharedPlugin] displayShowWindowWithFrame:newRect stringValue:results];
             
         }];
@@ -60,6 +61,20 @@
 
     }
 }
+
+- (NSRect)rectWithString:(NSString *)str{
+    CGRect rect = [str boundingRectWithSize:NSMakeSize(1000, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[NSFont systemFontOfSize:18]}];
+    rect.size.height += 6;
+    rect.size.width += 8;
+    NSRect newRect;
+    newRect.size = rect.size;
+    newRect.origin = self.window.frame.origin;
+    newRect.origin.y += self.window.frame.size.height;
+    return newRect;
+    
+}
+
+
 
 - (void)jx__hideWindow{
     

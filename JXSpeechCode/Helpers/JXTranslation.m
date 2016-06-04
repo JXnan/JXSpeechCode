@@ -48,7 +48,7 @@ static JXTranslation * translation;
         NSBundle * pluginBundle = [NSBundle bundleWithPath:[pluginPath stringByExpandingTildeInPath]];
         NSString * dicPath = [pluginBundle pathForResource:@"word" ofType:@"plist"];
         NSDictionary * dic = [NSDictionary dictionaryWithContentsOfFile:dicPath];
-        _dicLibrary = dic;
+        _dicLibrary = [dic valueForKey:@"dic"];
         
     }
     return self;
@@ -58,6 +58,9 @@ static JXTranslation * translation;
 #pragma mark - block
 - (void)chineseWithEnglishWord:(NSString *)string completion:(void (^)(NSString *))completion{
    NSString * response = @"翻译失败!";
+    NSLog(@"%@",string);
+    
+
     if ([string rangeOfString:@" "].length == 0) {//是否多个单词
         if ([[_dicLibrary allKeys] containsObject:string]) {//是否存在
             response = [_dicLibrary objectForKey:string ];
@@ -77,8 +80,7 @@ static JXTranslation * translation;
     [self.requestDic setValue:string forKey:P_q];
     [self.manager GET:URL parameters:self.requestDic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
        NSLog(@"成功");
-        
-        
+
         if (completion) {
             if ([[responseObject valueForKey:@"errorCode"] integerValue] == 0) {
                 completion([[responseObject valueForKey:@"translation"] objectAtIndex:0]);

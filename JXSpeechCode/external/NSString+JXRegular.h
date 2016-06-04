@@ -34,5 +34,7 @@
 - (BOOL)beganMatchWithType:(NSString *)type;
 
 - (NSArray <NSString *> *)getTheTextFromTheExpression:(NSString *)expression;
+
 - (NSArray <NSTextCheckingResult *> *)getTheResultFromTheExpression:(NSString *)expression;
+
 @end

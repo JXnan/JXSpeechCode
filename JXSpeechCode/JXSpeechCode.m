@@ -123,8 +123,14 @@ static NSString * expressionRemove = @"(<#)[^#>]*(#>)";
     if (self.speaking) {
         [self stopSpeech];
     }
-    [self speakingText:str];
     
+   
+    NSDate * date = [NSDate date];
+    [self performSelectorInBackground:@selector(speakingText:) withObject:str];
+    //[self speakingText:str];
+    NSTimeInterval space = [date timeIntervalSinceDate:[NSDate date]];
+    
+    NSLog(@"%f",space);
 }
 
 - (void)speakingText:(NSString *)str{
@@ -160,13 +166,17 @@ static NSString * expressionRemove = @"(<#)[^#>]*(#>)";
             [array removeObject:result];
         }
     }
-    {//分离单词 并转换小写
+    {//分离单词
         NSArray * array = [newString getTheTextFromTheExpression:expression];
         [newString deleteCharactersInRange:NSMakeRange(0, newString.length)];
         for (NSString * str in array) {
             [newString appendFormat:@"%@ ",str];
         }
+        
     }
+    NSCharacterSet * ws = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    newString = [newString stringByTrimmingCharactersInSet:ws].mutableCopy;
+    newString = [newString lowercaseString].mutableCopy;
     return newString;
 }
 
